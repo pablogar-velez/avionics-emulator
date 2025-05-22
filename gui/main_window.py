@@ -14,7 +14,6 @@ class MainWindow(QWidget):
         self.setWindowTitle("Avionics Systems Emulator - ARINC-429 Bus Monitor")
         self.setMinimumSize(1000, 700)
         
-        # Configurar paleta de colores aeronáuticos
         palette = self.palette()
         palette.setColor(QPalette.Window, QColor(30, 30, 45))
         palette.setColor(QPalette.WindowText, QColor(220, 220, 220))
@@ -142,7 +141,6 @@ class MainWindow(QWidget):
         # Connect bus signal
         self.bus.message_transmitted.connect(self.receive_message)
 
-    # Resto de los métodos permanecen igual...
     def receive_message(self, msg_str):
         from messages.message_format import ARINC429Message
 
