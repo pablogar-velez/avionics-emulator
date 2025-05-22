@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Qt-generated files
+*.ui.py
+
+# Temporary and system files
+*.log
+.DS_Store
+*.swp
